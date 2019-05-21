@@ -1,6 +1,6 @@
 # Delphi-Collection-FireDac
 My Own Delphi-Collection ( FireDac ) 
-![](Delphi-Collection-FireDac.png)
+![](Delphi-Collection-FireDac.jpg)
 **Authors:**  *WalWalWalides*
 ------
 
@@ -9,6 +9,7 @@ My Own Delphi-Collection ( FireDac )
 | File | Contents | 
 | --- | --- |
 | .gitignore | Git ignores the files in this file |
-|[MyAppConec](https://github.com/walwalwalides/Delphi-Collection-FMX/tree/master/MyAppConec)|Connect Android App to Mysql Database Through Datasnap Server Using TCP as CommunicationProtocol| 
+|[MySQL_StoreProc](https://github.com/walwalwalides/Delphi-Collection/tree/master/MySQL_StoreProc)|How create stored procedure in MySQL|
+
 | README.md | The readme for this project|
 
