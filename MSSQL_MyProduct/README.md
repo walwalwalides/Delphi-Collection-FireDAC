@@ -1,5 +1,5 @@
 # MSSQL_MyProduct
-- Connect Application to the Microsoft SQL Server DBMS using FireDAC .
+- Connect Application to the Microsoft SQL Server (DBMS) using FireDAC .
                    
 ![](MSSQL_MyProduct.png) 
 
