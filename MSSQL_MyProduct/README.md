@@ -16,11 +16,6 @@
 
 
 
-
-
-
-
-
 ## Files
 
 | File | Contents | 
@@ -29,20 +24,20 @@
 | uAbout.pas | About view of the programme |
 | uSplashDB.pas | Slapsh view of the programme |
 | Main.pas | Main view of the programme |
-|  Module | Main Module of the programme |
-|  uViewCategorie| Categorie View of the programme | 
-|  uViewClients | Clients View of the programme |
-|  uViewProducts | Products view of the programme |
-|  uMainDispaly | Main view of the programme |
-|  uEnum | uEnum Unit |
-|  cMyCategorie| Categorie Report of the programme | 
-|  cMyClients | Clients Reportof the programme |
-|  cMyProduts | Products Reportof the programme |
-|  uRelMyCategorie | Main view of the programme |
-|  uRelMyClients in | Main view of the programme |
-|  uRelMyProducts in| Main view of the programme | 
-|  cActualConecMMSQL | cActualConecMMSQL  Unit |
-|  cActualDatenMSSQL | cActualDatenMSSQL Unit |
+| Module | Main Module of the programme |
+| uViewCategorie| Categorie View  | 
+| uViewClients | Clients View |
+| uViewProducts | Products view of the programme |
+| uMainDispaly | Main view of the programme |
+| uEnum | uEnum Unit |
+| cMyCategorie| Categorie Class Unit | 
+| cMyClients | Clients Class Unit |
+| cMyProduts | Products Class Unit |
+| uRelMyCategorie | Categorie Report  |
+| uRelMyClients in | Clients Report  |
+| uRelMyProducts in| Products Report  | 
+| cActualConecMMSQL | cActualConecMMSQL  Unit |
+| cActualDatenMSSQL | cActualDatenMSSQL Unit |
 | cActualTableMSSQL | cActualTableMSSQL Unit |
 | MSSQL_MyProduct.dpk | The compiler project file |
 | MSSQL_MyProduct.dproj | The MSBUILD project file |
