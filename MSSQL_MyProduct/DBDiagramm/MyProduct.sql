@@ -29,7 +29,7 @@ END
 IF OBJECT_ID ('Clients') IS NULL 
 BEGIN
 	CREATE TABLE Clients(
-		ClienteId int IDENTITY(1,1) NOT NULL,
+		ClientsID int IDENTITY(1,1) NOT NULL,
 		Cname varchar(60) NULL,
 		Caddress varchar(60) null,
 		Ccity varchar(50) null,
@@ -39,7 +39,7 @@ BEGIN
 		Ctelefon varchar(14) null,  
 		Cemail varchar(100) null,
 		Cbirthdate datetime null
-		PRIMARY KEY (ClienteId),
+		PRIMARY KEY (ClientsID),
 	)
 END
 

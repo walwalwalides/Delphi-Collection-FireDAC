@@ -1,0 +1,60 @@
+object frmSplashDB: TfrmSplashDB
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  ClientHeight = 67
+  ClientWidth = 473
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 473
+    Height = 67
+    Align = alClient
+    BevelOuter = bvLowered
+    BevelWidth = 3
+    BorderWidth = 3
+    Caption = 'Panel1'
+    Color = clBlack
+    ParentBackground = False
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 6
+      Top = 6
+      Width = 461
+      Height = 55
+      Align = alClient
+      BevelInner = bvLowered
+      BevelOuter = bvNone
+      BevelWidth = 2
+      BorderWidth = 2
+      Color = clWhite
+      Enabled = False
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitLeft = 12
+      object Label1: TLabel
+        Left = 46
+        Top = 14
+        Width = 369
+        Height = 25
+        Caption = 'Updating Database , Please wait... '
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+  end
+end
