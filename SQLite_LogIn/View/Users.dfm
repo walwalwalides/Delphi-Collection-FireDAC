@@ -797,7 +797,7 @@ object FrmUsers: TFrmUsers
       OnClick = OnUserCommand
     end
     object LabelAccessRate: TLabel
-      Left = 4
+      Left = 174
       Top = 115
       Width = 61
       Height = 13
@@ -810,7 +810,7 @@ object FrmUsers: TFrmUsers
       ParentFont = False
     end
     object LabelPC: TLabel
-      Left = 119
+      Left = 289
       Top = 115
       Width = 8
       Height = 13
@@ -878,7 +878,7 @@ object FrmUsers: TFrmUsers
       OnExit = EditFieldExit
     end
     object EditWorkingRate: TEdit
-      Left = 89
+      Left = 259
       Top = 112
       Width = 26
       Height = 21
