@@ -1,0 +1,120 @@
+
+Program: SaveMyLogIn - Management and Planning Tools 
+
+================================================== =============
+Texts standards and for libraries
+================================================== =============
+
+[--- Texts standard for menus ---]
+sMenu_Password = &Password
+sMenu_File = &File
+sMenu_New = &New
+sMenu_NewFolder = &New folder
+sMenu_Open = &Open
+sMenu_Close = &Close
+sMenu_Import = &Import
+sMenu_Export = &Export
+sMenu_Save = &Save
+sMenu_SaveTo = &Save As
+sMenu_Delete = &Delete
+sMenu_View = &Preview
+sMenu_Quit = &Quit
+sMenu_Help = &Help
+sMenu_HelpTo = &Help on:
+sMenu_About = &About
+sMenu_Info = &Information
+sMenu_About2 = About the
+
+[--- Texts standard for buttons ---]  
+sBut_Password = &Password
+sBut_New = &New
+sBut_NewFolder = &New Folder
+sBut_Open = &Open ...
+sBut_Close = &Close
+sBut_Import = &Import ...
+sBut_Export = &Export ...
+sBut_Save = &Save
+sBut_View = &Preview ...
+sBut_Delete = &Delete ...
+
+sBut_Config = &Configure ...
+sBut_Options = &Options ...
+sBut_About = &About ...
+sBut_Accept = &Accept
+sBut_Quit = &Quit
+sBut_Cancel = &Cancel
+
+[--- Texts standard for hints ---]
+sHint_Open = Open ...
+sHint_Import = Import ...
+sHint_Save = Save
+sHint_SaveTo = Save As ...
+sHint_Options = Configuring options ...
+sHint_About = About the program ...
+sHint_Quit = Exit the application
+
+[--- Texts for messages ---]
+sMsg_Wait = Please wait S. V. P.
+sMsg_Open = Open
+sMsg_Save = Save
+sMsg_FileExist = The file already exists.
+sMsg_Replace = Do you want to replace it?
+sMsg_ErrMinutes = Error entering minutes!
+
+[--- Texts for FormPassword ---]
+sPass_Title = Password
+sPass_Text = Enter the password
+sPass_Confirm = Confirm the password
+sPass_Rights1 = You do not have
+sPass_Rights2 = the rights of use!
+sPass_Incorrect = The password is incorrect!
+sPass_Different = The 2 fields are not identical!
+
+[--- Texts for FormAbout ---]
+sAbout_Title = About
+sAbout_Version = Version
+sAbout_DevName = Program developed by
+sAbout_EmailObj = Relates to
+
+[--- Texts for FormAlertMsg ---]
+sAlert_Title = Alert!
+
+[--- Texts for FormSelectDir ---]
+sSelDir_Title = Selecting a directory
+sSelDir_Select = Choose a directory from the list
+
+[--- Texts for FormSelectFolder ---]
+sSelFolder_Title = Selecting a folder
+sSelFolder_NewFolder = New folder
+sSelFolder_HintDesktop = Access to the desktop folder
+sSelFolder_HintComputer = Access to the "My Computer" folder
+sSelFolder_HintPersonal = Access to the personal file
+sSelFolder_HintNetwork = Network Folder Access
+sSelFolder_HintRecents = Access to the "recent" folder
+
+[--- Texts for FormSelectFolderCfg ---]
+sCfgFolder_Title = Options for selecting a folder
+sCfgFolder_GrpTree = Tree
+sCfgFolder_DispImg = Show Images
+sCfgFolder_DispLines = Show lines
+sCfgFolder_DispRoot = Show root
+sCfgFolder_DispExpBut = Show expansion buttons
+sCfgFolder_GrpOptions = Options
+sCfgFolder_HideFolder = Show hidden folders
+sCfgFolder_CreateFolder = Allow Folder Creation
+sCfgFolder_ContextMenu = Allow context menu
+sCfgFolder_Rename = Allow renaming
+sCfgFolder_GrpShortcuts = Shortcuts Folders
+sCfgFolder_Desktop = Desktop folder
+sCfgFolder_Personnal = My Documents
+sCfgFolder_MyComputer = My computer
+sCfgFolder_Network = Network Folder
+sCfgFolder_Recents = Recent Documents
+
+
+
+[--- Texts for Skins ---]
+sSkins_Skin = Appearance
+sSkins_Choice = Choice of appearance ... (Current skin:
+sSkins_Standard = Standard Appearance
+sSkins_Folder = Directory of appearances

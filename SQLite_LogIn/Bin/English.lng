@@ -1,0 +1,65 @@
+	
+Program: SaveMyLogIn - Management and Planning Tools 
+
+================================================== =============
+Application-specific texts
+================================================== =============
+
+[--- Texts for titles ---]
+sTitle_Application = SaveMyLogIn
+sTitle_MainApplic = Management and Planning Tools 
+
+[--- Texts for menus ---]
+sMenuDatabase = Database ...
+sMenuLogin = Login ...
+sMenuUsers = List of users ...
+sMenuQuit = Quit ...
+
+
+[--- Texts for buttons ---]
+sButNew = &New
+sButAdd = &Add
+sButUpd = &Edit
+sButDel = &Remove
+
+sButDatabase = &Database
+sButLogin = &Login
+sButUsers = &Users
+sButQuit = &Quit 
+sButAbout = &About 
+[--- Texts for labels ---]
+sLabelDatabase = Database
+
+
+[--- Texts for hints ---]
+sHint_Database = Open a Database
+sHint_Users = User Management
+sHint_Login = User Login
+sHint_About = About
+sHint_Quit = Close the Application
+
+[--- Texts for messages ---]
+
+sMsgNotFile = The specified file does not exist. it can be used to create a new file.
+sMsgQuestQuit = Are you sure you want to quit the application?
+sMsgFieldEmpty = Not all fields are filled!
+sMsgMatriculeExist = The roll number already exists!
+sMsgUserExist = The user already exists!
+sMsgUserNotExist = The user does not exist!
+
+
+[--- Texts for users dialogs ---]
+sUserDlgTitle = User Management
+sUserAccess = Identification
+sUserFirstName = First Name
+sUserLastName = Name
+sUserMatricule = Matricule
+sUserUserType = Type
+sUserConfirmation = Confirmation
+sUserAccessRate = Access rate
+sUserRightsAdmin = Administrator
+sUserRightsUser = User
+
+
+
+
