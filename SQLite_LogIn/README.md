@@ -8,7 +8,7 @@
 
 # Features  
 - Storing Application Data&Settings in ini Files .
-- Execute Different Sql Task and CRUD-Operationen .
+- Execute Different SQL Task and CRUD-Operationen .
 - Define the Language Of Every Control Element In Your Application .
 
 
