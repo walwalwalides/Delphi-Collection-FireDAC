@@ -1,5 +1,5 @@
 # SQLite_SaveMyLogIn
-- Create  and Save Different Parameters in Database Using Sqlite (Management and Planning Tools) .
+- Create and Save Different Parameters in Database Using SQLite (Management and Planning Tools) .
                    
 ![](SQLite_SaveMyLogIn.png) 
 

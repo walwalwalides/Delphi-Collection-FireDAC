@@ -317,7 +317,7 @@ object frmAbout: TfrmAbout
   end
   object Titre: TLabel
     Left = 71
-    Top = 42
+    Top = 26
     Width = 130
     Height = 19
     Caption = 'SQLite_SaveMyLogIn'
@@ -325,7 +325,7 @@ object frmAbout: TfrmAbout
     Font.Color = clWindowText
     Font.Height = -15
     Font.Name = 'Impact'
-    Font.Style = [fsUnderline]
+    Font.Style = []
     ParentFont = False
   end
   object Texte: TMemo
@@ -334,11 +334,14 @@ object frmAbout: TfrmAbout
     Width = 185
     Height = 180
     Lines.Strings = (
-      '      Software name'
-      '      SQLite_SaveMyLogIn'
+      '            Software name'
+      '                      SQLite_SaveMyLogIn'
       ''
-      '      Software version'
-      '       V1.0.0'
+      '            Software version'
+      '                                        V1.0.0'
+      ''
+      ''
+      ''
       ''
       ''
       ''

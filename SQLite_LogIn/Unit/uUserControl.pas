@@ -81,7 +81,7 @@ begin
        else if (AnsiCompareText(TMenuItem(Sender).Name, 'MenuItemQuit') = 0) or (AnsiCompareText(TSpeedButton(Sender).Name, 'SpeedButtonQuit') = 0) then
       FrmMain.close
 
-    else if (AnsiCompareText(TMenuItem(Sender).Name, 'MenuItemAbout') = 0) then
+    else if (AnsiCompareText(TMenuItem(Sender).Name, 'MenuItemAbout') = 0) or (AnsiCompareText(TSpeedButton(Sender).Name, 'SpeedButtonAbout') = 0) then
       UserCtrl.CreateFrmAboutBox
         else if (AnsiCompareText(TMenuItem(Sender).Name, 'MenuItemInfo') = 0) then
       CreateAboutBox(nDISPMODE_NORMAL, 0)
