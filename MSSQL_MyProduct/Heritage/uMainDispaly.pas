@@ -86,12 +86,7 @@ implementation
 
 
 
-{$region 'OBSERVAÇÕES'}
-//TAG: 1 - Chave Primaria
-//TAG: 2 - Campos Obrigatórios
-{$endregion}
-
-{$region 'Function/Procedure DE CONTROLE'}
+{$region 'Function&Procedure Controls'}
 procedure TfrmMainDisplay.ControlarBotoes(btnNew, btnAlter, btnCancel, btnSave,
                           btnDelete:TBitBtn; btnNavigate:TDBNavigator;
                           pgcPrincipal:TPageControl; Flag:Boolean);
@@ -172,7 +167,7 @@ end;
 
 {$endregion}
 
-{$region 'Métodos Virtual'}
+{$region 'Virtual Methods'}
 function TfrmMainDisplay.Save(DMLAction: TDMLAction): boolean;
 begin
    if (DMLAction=acInsert) then

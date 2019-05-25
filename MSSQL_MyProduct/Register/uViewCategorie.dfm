@@ -107,5 +107,7 @@ inherited frmViewCategorie: TfrmViewCategorie
     Connection = DMMain.ConnectionMain
     SQL.Strings = (
       'Select CategorieID, CATDescription from Categorie')
+    Left = 621
+    Top = 101
   end
 end

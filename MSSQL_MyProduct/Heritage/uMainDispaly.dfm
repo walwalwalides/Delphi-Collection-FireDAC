@@ -26,7 +26,6 @@ object frmMainDisplay: TfrmMainDisplay
     Color = clWhite
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = -1
     DesignSize = (
       864
       52)
@@ -278,8 +277,6 @@ object frmMainDisplay: TfrmMainDisplay
       ActivePage = tabListagem
       Align = alClient
       TabOrder = 0
-      ExplicitLeft = 2
-      ExplicitTop = -4
       object tabListagem: TTabSheet
         Caption = 'List'
         object pnlListagemTopo: TPanel

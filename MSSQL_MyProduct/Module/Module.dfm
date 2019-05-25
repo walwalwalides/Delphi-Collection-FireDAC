@@ -5,17 +5,16 @@ object DMMain: TDMMain
   object ConnectionMain: TFDConnection
     Params.Strings = (
       'ConnectionDef=MSSQL_MyProduct')
-    Connected = True
-    Left = 96
-    Top = 80
+    Left = 136
+    Top = 104
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'Forms'
-    Left = 32
-    Top = 24
+    Left = 64
+    Top = 48
   end
   object FDPhysMSSQLDriverLink1: TFDPhysMSSQLDriverLink
-    Left = 96
-    Top = 16
+    Left = 176
+    Top = 32
   end
 end
