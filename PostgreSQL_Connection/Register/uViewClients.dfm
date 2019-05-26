@@ -27,7 +27,6 @@ inherited frmViewClients: TfrmViewClients
     inherited pgcPrincipal: TPageControl
       Width = 822
       Height = 333
-      ActivePage = tabListagem
       ExplicitLeft = 2
       ExplicitTop = -4
       ExplicitWidth = 822
