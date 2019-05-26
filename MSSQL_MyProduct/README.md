@@ -11,7 +11,7 @@
 # Features  
 - Connect Application With MSSQL Server .
 - Test Connection Parameters of the Main Connection .
-- Check Table Exists in MSSQL Server .
+- Check Table Exists With MSSQL Server .
 - Execute Different Sql Task and CRUD-Operationen .
 
 
