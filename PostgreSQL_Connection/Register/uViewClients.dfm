@@ -263,8 +263,8 @@ inherited frmViewClients: TfrmViewClients
       
         'SELECT ClientID,CName,CAdress,Ccity,Ctelefon,Cemail,Csex,Cbirthd' +
         'ate,Cinsertts FROM Clients')
-    Left = 725
-    Top = 53
+    Left = 717
+    Top = 37
     object qrListclientid: TIntegerField
       FieldName = 'clientid'
       Origin = 'clientid'

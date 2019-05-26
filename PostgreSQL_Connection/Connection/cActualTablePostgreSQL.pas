@@ -1,5 +1,5 @@
 { ============================================
-  Software Name : 	MMSQL_MyProduct
+  Software Name : 	PostgreSQL_Connection
   ============================================ }
 { ******************************************** }
 { Written By WalWalWalides }
@@ -48,6 +48,9 @@ destructor TActualTablePostgreSQL.Destroy;
 begin
   inherited;
 end;
+
+{$REGION 'Check Table exists'}
+
 // Methode1
 {
   SELECT EXISTS (
@@ -64,6 +67,9 @@ end;
   SELECT 'public.clients'::regclass
 }
 
+{$ENDREGION}
+
+  //I use hier  the second methods
 function TActualTablePostgreSQL.TabelaExiste(aTableName: String): Boolean;
 Var
   Qry: TFDQuery;

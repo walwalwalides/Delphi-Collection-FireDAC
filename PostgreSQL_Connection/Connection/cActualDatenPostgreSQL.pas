@@ -1,5 +1,5 @@
 { ============================================
-  Software Name : 	MMSQL_MyProduct
+  Software Name : 	PostgreSQL_Connection
   ============================================ }
 { ******************************************** }
 { Written By WalWalWalides                     }
@@ -76,14 +76,14 @@ end;
 
 procedure TActualDatenPostgreSQL.Test;
 begin
-  if not TableExist('categorie','teste') then
+  if not TableExist('clients','teste') then
   begin
-    ExecuteMSSQLDataBase('ALTER TABLE Categorie ADD teste varchar(30) NULL ');
+    ExecuteMSSQLDataBase('ALTER TABLE clients ADD teste varchar(30) NULL ');
   end;
 
-  if TableExist('categorie','teste') then
+  if TableExist('clients','teste') then
   begin
-    ExecuteMSSQLDataBase('ALTER TABLE Categorie DROP COLUMN teste ');
+    ExecuteMSSQLDataBase('ALTER TABLE clients DROP COLUMN teste ');
   end;
 
 end;

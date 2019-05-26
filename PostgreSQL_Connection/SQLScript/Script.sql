@@ -18,7 +18,7 @@ constraint Client_pkey Primary Key (ClientID)
 
 --INSERT RECORD
 
-Insert into Clients values(1,'Client1','3 Welcome Street','New York',45454,'WalWalWalides@gmail.com','M','12.12.2012');
+Insert into Clients values(1,'Client1','3 Welcome Street','New York','(00) 0000-0000','WalWalWalides@gmail.com','M','12.12.2012');
 
 -- UPDATE RECORD
 

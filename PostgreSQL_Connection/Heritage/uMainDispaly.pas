@@ -1,6 +1,6 @@
 
 { ============================================
-  Software Name : 	MMSQL_MyProduct
+  Software Name : 	PostgreSQL_Connection
   ============================================ }
 { ******************************************** }
 { Written By WalWalWalides                     }
