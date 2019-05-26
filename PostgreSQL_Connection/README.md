@@ -1,5 +1,5 @@
 # PostgreSQL_Connection
-- Connect Application and Set Returning Functions with Postgresql server using FireDAC .
+- Connect Application and Set Returning Functions with Postgresql Server Using FireDAC .
                    
 ![](PostgreSQL_Connection.png) 
 
