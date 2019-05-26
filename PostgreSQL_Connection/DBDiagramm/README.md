@@ -1,5 +1,5 @@
 # MSSQL_MyProduct (DBDiagramm)
 
-![](MyProductDBDiagramm.png)
+![](DBDiagramm.png)
 **Authors:**  *WalWalWalides*
 
