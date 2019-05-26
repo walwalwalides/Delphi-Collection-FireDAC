@@ -1,8 +1,8 @@
-object frmRelMyClients: TfrmRelMyClients
+object frmRelMyProdutcs: TfrmRelMyProdutcs
   Left = 0
   Top = 0
-  Caption = 'frmRelMyClients'
-  ClientHeight = 546
+  Caption = 'frmRelMyProdutcs'
+  ClientHeight = 839
   ClientWidth = 825
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,18 +15,18 @@ object frmRelMyClients: TfrmRelMyClients
   OnDestroy = FormDestroy
   PixelsPerInch = 96
   TextHeight = 13
-  object dtsClientes: TDataSource
-    DataSet = qrClients
-    Left = 104
-    Top = 64
+  object dtsProdutos: TDataSource
+    DataSet = qrProduct
+    Left = 56
+    Top = 113
   end
-  object qrClients: TFDQuery
+  object qrProduct: TFDQuery
     Connection = DMMain.ConnectionMain
     SQL.Strings = (
       
-        ' SELECT clients.ClientsID,Clients.Cname,Clients.Cemail,Clients.C' +
-        'telefon FROM Clients')
-    Left = 48
-    Top = 64
+        '  SELECT  Products.ProductID,Products.PName,Products.PDescriptio' +
+        'n,Products.PValue,Products.PQuantity FROM  Products')
+    Left = 160
+    Top = 168
   end
 end

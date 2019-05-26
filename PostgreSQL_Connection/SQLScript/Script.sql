@@ -1,32 +1,45 @@
 --PostgreSQL Script Connection
 --Enter SQLScript in Query Tool
 
-Create Table Client 
+Create Table Clients
 (
 ClientID serial Not Null,
 CName character(45) Not Null,
-CTelefonFix character(13),
-CTelefonMobil Character(13),
-CEmail Character(40),
+CAdress Character(100),
+CCity Character(50),
+CTelefon character(14),
+CEmail Character(60),
 CSex Character(1) Not Null,
 CBirthdate Date,
 CInsertts timestamp without time zone ,
-constraint Client_pkey Primary Key (ClientID)	
+constraint Client_pkey Primary Key (ClientID)
 )
+
 
 --INSERT RECORD
 
-insert into Client values(1,'Client1',50000,45454,'WalWalWalides@gmail.com','M','12-12-1212');
+Insert into Clients values(1,'Client1','3 Welcome Street','New York',45454,'WalWalWalides@gmail.com','M','12.12.2012');
 
 -- UPDATE RECORD
 
-Update Client Set CEmail='123' where CName='Client1';
+Update Clients Set CEmail='123' where CName='Client1';
+
+--CREATE FUNCTION
+
+CREATE FUNCTION INSERT_DATE()
+returns Trigger as $$
+Begin
+New.CInsertts = Now();
+RETURN New;
+end;
+$$
+Language plpgsql; 
 
 --CREATE TRIGGER
 
-Create Trigger Insert_New_Client
+Create Trigger Insert_New_Clients
 Before INSERT
-On Client
+On Clients
 For EACH ROW
 Execute procedure INSERT_DATE();
 
@@ -37,19 +50,11 @@ $BODY$
 Begin
 if New.CEmail <>old.CEmail
 then
-insert into Client_Logs values(old.CLientID,old.CName,old.CEmail,new.CEmail);
+insert into Clients_Logs values(old.CLientID,old.CName,old.CEmail,new.CEmail);
 end if; 
 return New;
 end;
 $BODY$
 Language plpgsql;
 
---CREATE FUNCTION
 
-CREATE FUNCTION INSERT_DATE
-returns Trigger as $$
-New.CInsertts = Now();
-RETURN New;
-end;
-$$
-Language plpgsql; 

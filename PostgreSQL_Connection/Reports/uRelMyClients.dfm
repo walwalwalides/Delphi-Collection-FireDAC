@@ -24,8 +24,9 @@ object frmRelMyClients: TfrmRelMyClients
     Connection = DMMain.ConnectionMain
     SQL.Strings = (
       
-        ' SELECT clients.ClientsID,Clients.Cname,Clients.Cemail,Clients.C' +
-        'telefon FROM Clients')
+        'SELECT clients.ClientID,Clients.Cname,Clients.Ccity,Clients.Csex' +
+        ',Clients.CAdress,Clients.Cemail,Clients.Ctelefon,Clients.CBirthd' +
+        'ate,Clients.Cinsertts FROM Clients')
     Left = 48
     Top = 64
   end
