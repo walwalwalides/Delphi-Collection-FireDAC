@@ -3,7 +3,7 @@
   ============================================ }
 { ******************************************** }
 { Written By WalWalWalides                     }
-{ CopyRight © 2019                             }
+{ CopyRight Â© 2019                             }
 { Email : WalWalWalides@gmail.com              }
 { GitHub :https://github.com/walwalwalides     }
 { ******************************************** }
@@ -96,7 +96,7 @@ begin
   if not TabelaExiste('clients') then
   begin
     ExecuteMSSQLDataBase(
-      '	CREATE TABLE clientes (  '+
+      '	CREATE TABLE clients (  '+
       '		ClientsID int IDENTITY(1,1) NOT NULL, '+
       '		Cname varchar(60) NULL, '+
       '		Caddress varchar(60) null, '+
