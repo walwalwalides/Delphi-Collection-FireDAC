@@ -1,5 +1,5 @@
 # PostgreSQL_Connection
-- Connect Application to Postgresql server using FireDAC .
+- Connect Application and Set Returning Functions with Postgresql server using FireDAC .
                    
 ![](PostgreSQL_Connection.png) 
 
@@ -10,6 +10,8 @@
 - Connect Application With PostgreSQL Server .
 - Test Connection Parameters of the Main Connection .
 - Check Table Exists With PostgreSQL Server .
+- Set Trigger that are run automatically when a specified change operation .
+- Set Returning Functions .
 - Execute Different SQL Tasks and CRUD-Operationen .
 
 
