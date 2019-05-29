@@ -1,7 +1,7 @@
 # MongoDB_Connection
 - Connect Application with MongoDB Server Using FireDAC .
                    
-![](PostgreSQL_Connection.png) 
+![](MongoDB_Connection.png) 
 
 
 
