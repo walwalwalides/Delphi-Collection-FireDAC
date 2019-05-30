@@ -23,7 +23,7 @@ uses
   FireDAC.Comp.DataSet, FireDAC.Phys.MongoDBDataSet, Vcl.StdCtrls, Vcl.Grids,
   Vcl.DBGrids, FireDAC.Stan.Util, FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef,
   FireDAC.Stan.ExprFuncs, FireDAC.DApt, FireDAC.Phys.SQLiteVDataSet,
-  FireDAC.VCLUI.Wait, System.Actions, Vcl.ActnList, Vcl.Menus;
+  FireDAC.VCLUI.Wait, System.Actions, Vcl.ActnList, Vcl.Menus, Vcl.Buttons;
 
 type
   TfrmMain = class(TForm)
@@ -32,7 +32,6 @@ type
     Label3: TLabel;
     EditMatch: TEdit;
     DBGrid1: TDBGrid;
-    ButtonOpenMongo: TButton;
     EditSort: TEdit;
     EditProjection: TEdit;
     dsQuery: TDataSource;
@@ -59,6 +58,7 @@ type
     actAbout: TAction;
     acAddUser: TAction;
     GrBoxMain: TGroupBox;
+    ButtonOpenMongo: TBitBtn;
     procedure ButtonOpenMongoClick(Sender: TObject);
     procedure actAboutExecute(Sender: TObject);
     procedure actExitExecute(Sender: TObject);
