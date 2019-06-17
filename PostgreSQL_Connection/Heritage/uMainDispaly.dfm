@@ -274,7 +274,7 @@ object frmMainDisplay: TfrmMainDisplay
       Top = 1
       Width = 862
       Height = 424
-      ActivePage = tabManutencao
+      ActivePage = tabListagem
       Align = alClient
       TabOrder = 0
       object tabListagem: TTabSheet

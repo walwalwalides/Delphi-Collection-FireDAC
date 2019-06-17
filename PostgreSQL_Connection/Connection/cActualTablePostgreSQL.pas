@@ -125,9 +125,10 @@ procedure TActualTablePostgreSQL.Clients;
 begin
   if not TabelaExiste('clients') then
   begin
-    ExecuteMSSQLDataBase('CREATE TABLE clients (' + 'ClientID serial NOT NULL,' + 'CName character(45) Not Null,' +
+    ExecuteMSSQLDataBase('CREATE TABLE clients (' + 'ClientID SERIAL,' + 'CName character(45) Not Null,' +
       'CAdress Character(100), ' + 'CCity varchar(50) null,' + 'CTelefon character(14), ' +
-      'CEmail Character(60),' + 'CSex Character(1) Not Null,' + 'CBirthdate Date,' +
+      'CEmail Character(60),' + 'CSex Character(1) Not Null,' + 'CBirthdate Date,' + 'CInsertts Date,'+
+
       'Constraint Clients_pkey Primary Key (ClientID) ' + ') ');
   end;
 end;

@@ -4,6 +4,8 @@ object DMMain: TDMMain
   Height = 225
   Width = 329
   object ConnectionMain: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=Postgres_MyTest')
     LoginPrompt = False
     Left = 48
     Top = 104

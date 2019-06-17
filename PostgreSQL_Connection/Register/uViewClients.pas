@@ -32,6 +32,8 @@ type
     Label2: TLabel;
     Label3: TLabel;
     DTPBirthdate: TDateTimePicker;
+    DTPInsertDate: TDateTimePicker;
+    lblInsertDate: TLabel;
     qrListclientid: TIntegerField;
     qrListcname: TWideStringField;
     qrListcadress: TWideStringField;
@@ -40,9 +42,7 @@ type
     qrListcemail: TWideStringField;
     qrListcsex: TWideStringField;
     qrListcbirthdate: TDateField;
-    qrListcinsertts: TSQLTimeStampField;
-    DTPInsertDate: TDateTimePicker;
-    lblInsertDate: TLabel;
+    qrListcinsertts: TDateField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure btnNewClick(Sender: TObject);
@@ -85,9 +85,11 @@ begin
   oClient.city            :=edtCity.Text;
    oClient.sex       :=edtSex.Text;
   oClient.adress         :=edtAdress.Text;
-//  oClient.insertts         :=edtCity.Text;
+  oClient.birthdate         :=DTPBirthdate.Date;
+  oClient.insertts         :=DTPInsertDate.Date;
   oClient.telefon       :=edtTelefone.Text;
   oClient.email          :=edtEmail.Text;
+
 
 
   if (ADMLAction=acInsert) then

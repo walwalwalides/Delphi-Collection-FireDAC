@@ -27,8 +27,7 @@ inherited frmViewClients: TfrmViewClients
     inherited pgcPrincipal: TPageControl
       Width = 822
       Height = 333
-      ExplicitLeft = 2
-      ExplicitTop = -4
+      ActivePage = tabManutencao
       ExplicitWidth = 822
       ExplicitHeight = 333
       inherited tabListagem: TTabSheet
@@ -120,8 +119,6 @@ inherited frmViewClients: TfrmViewClients
         end
       end
       inherited tabManutencao: TTabSheet
-        ExplicitLeft = 5
-        ExplicitTop = 23
         ExplicitWidth = 814
         ExplicitHeight = 305
         object Label1: TLabel
@@ -284,7 +281,6 @@ inherited frmViewClients: TfrmViewClients
     object qrListccity: TWideStringField
       FieldName = 'ccity'
       Origin = 'ccity'
-      FixedChar = True
       Size = 50
     end
     object qrListctelefon: TWideStringField
@@ -309,7 +305,7 @@ inherited frmViewClients: TfrmViewClients
       FieldName = 'cbirthdate'
       Origin = 'cbirthdate'
     end
-    object qrListcinsertts: TSQLTimeStampField
+    object qrListcinsertts: TDateField
       FieldName = 'cinsertts'
       Origin = 'cinsertts'
     end
