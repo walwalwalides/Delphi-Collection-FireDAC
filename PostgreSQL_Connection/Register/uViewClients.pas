@@ -22,7 +22,7 @@ uses
 type
   TfrmViewClients = class(TfrmMainDisplay)
     edtClienteId: TLabeledEdit;
-    edtNome: TLabeledEdit;
+    edtName: TLabeledEdit;
     edtCity: TLabeledEdit;
     edtAdress: TLabeledEdit;
     edtEmail: TLabeledEdit;
@@ -76,12 +76,12 @@ end;
 
 function TfrmViewClients.Save(ADMLAction: TDMLAction): Boolean;
 begin
-  if edtClienteId.Text<>EmptyStr then
-     oClient.clientID:=StrToInt(edtClienteId.Text)
-  else
-     oClient.clientID:=0;
+//  if edtClienteId.Text<>EmptyStr then
+//     oClient.clientID:=StrToInt(edtClienteId.Text)
+//  else
+//     oClient.clientID:=1;
 
-  oClient.name           :=edtNome.Text;
+  oClient.name           :=edtName.Text;
   oClient.city            :=edtCity.Text;
    oClient.sex       :=edtSex.Text;
   oClient.adress         :=edtAdress.Text;
@@ -106,14 +106,14 @@ begin
   if oClient.Select(qrList.FieldByName('ClientID').AsInteger) then
   begin
      edtClienteId.Text:=IntToStr(oClient.clientID);
-     edtNome.Text     :=oClient.name;
+     edtName.Text     :=oClient.name;
      edtSex.Text      :=oClient.sex;
      edtAdress.Text   :=oClient.adress;
      edtCity.Text   :=oClient.city;
      edtTelefone.Text :=oClient.telefon;
      edtEmail.Text    :=oClient.email;
      DTPBirthdate.Date:=oClient.birthdate;
-     DTPBirthdate.DateTime:=oClient.insertts;
+     DTPBirthdate.Date:=oClient.insertts;
   end
   else begin
     btnCancel.Click;
@@ -126,8 +126,9 @@ end;
 procedure TfrmViewClients.btnNewClick(Sender: TObject);
 begin
   inherited;
-   DTPBirthdate.Date:=Date;
-  edtNome.SetFocus;
+//   DTPBirthdate.Date:=Date;
+//   DTPInsertDate.Date:=Date;
+  edtName.SetFocus;
 end;
 
 
@@ -146,12 +147,6 @@ begin
   IndiceAtual:='ClientID';
 
 end;
-
-
-
-
-
-
 
 
 

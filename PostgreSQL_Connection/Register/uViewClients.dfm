@@ -162,7 +162,7 @@ inherited frmViewClients: TfrmViewClients
           NumbersOnly = True
           TabOrder = 0
         end
-        object edtNome: TLabeledEdit
+        object edtName: TLabeledEdit
           Tag = 2
           Left = 8
           Top = 80
@@ -228,8 +228,8 @@ inherited frmViewClients: TfrmViewClients
           Text = '(  )     -    '
         end
         object DTPBirthdate: TDateTimePicker
-          Left = 8
-          Top = 120
+          Left = 314
+          Top = 272
           Width = 186
           Height = 21
           Date = 0.762079803243977900
@@ -237,8 +237,8 @@ inherited frmViewClients: TfrmViewClients
           TabOrder = 7
         end
         object DTPInsertDate: TDateTimePicker
-          Left = 314
-          Top = 269
+          Left = 8
+          Top = 123
           Width = 186
           Height = 21
           Date = 0.762079803243977900

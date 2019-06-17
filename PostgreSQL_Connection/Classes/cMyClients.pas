@@ -30,9 +30,9 @@ type
     F_adress: string;
     F_city: String;
     F_sex: String;
-
     F_telefon: string;
     F_email: string;
+
     F_birthdate: TDateTime;
     F_insertts: TDateTime;
   public
@@ -90,7 +90,7 @@ begin
     Qry.Connection := ConecMain;
     Qry.SQL.Clear;
     Qry.SQL.Add('DELETE FROM Clients ' + ' WHERE ClientID=:ClientID ');
-    Qry.ParamByName('ClientID').AsInteger := F_clienteId;
+    Qry.ParamByName('ClientID').AsInteger := F_clienteID;
     Try
       ConecMain.StartTransaction;
       Qry.ExecSQL;
@@ -117,6 +117,7 @@ begin
     Qry.SQL.Clear;
     Qry.SQL.Add('UPDATE Clients ' + '   SET Cname            =:Cname ' + '       ,Cadress        =:Cadress ' + '       ,Ccity          =:Ccity ' +
       '       ,Csex       =:Csex ' + '       ,Ctelefon       =:Ctelefon ' + '       ,Cemail         =:Cemail ' + '       ,Cbirthdate =:Cbirthdate ' +
+      '       ,Cinsertts       =:Cinsertts ' +
       ' WHERE ClientID=:ClientID ');
     Qry.ParamByName('ClientID').AsInteger := Self.F_clienteId;
     Qry.ParamByName('Cname').AsString := Self.F_name;
@@ -153,13 +154,10 @@ begin
     Qry := TFDQuery.Create(nil);
     Qry.Connection := ConecMain;
     Qry.SQL.Clear;
-    Qry.SQL.Add('INSERT INTO Clients (Cname, ' + '                      Cadress, ' + '                      Ccity,  ' + '                      Cneighborhood,  '
-      + '                      Cstate, ' + '                      Csex, ' + '                      Czipcode, ' + '                      Ctelefon, ' +
-      '                      Cemail, ' + '                      Cbirthdate) ' + ' VALUES              (:Cname, ' + '                      :Cadress, ' +
-      '                      :Ccity,  ' + '                      :Cneighborhood,  ' + '                      :Cstate, ' + '                      :Csex, ' +
-      '                      :Czipcode, ' + '                      :Ctelefon, ' + '                      :Cemail, ' + '                      :Cbirthdate,' +
+    Qry.SQL.Add('INSERT INTO Clients (Cname, ' + '                      Cadress, ' + '                      Ccity,  ' + '                      Csex, ' + '                      Ctelefon, ' +
+      '                      Cemail, ' + '                      Cbirthdate, ' +  '                      Cinsertts) ' + ' VALUES              (:Cname, ' + '                      :Cadress, ' +
+      '                      :Ccity,  ' + '                      :Csex, ' + '                      :Ctelefon, ' + '                      :Cemail, ' + '                      :Cbirthdate,' +
       '                      :Cinsertts)');
-
     Qry.ParamByName('Cname').AsString := Self.F_name;
     Qry.ParamByName('Cadress').AsString := Self.F_adress;
     Qry.ParamByName('Ccity').AsString := Self.F_city;
@@ -167,8 +165,8 @@ begin
     Qry.ParamByName('Ctelefon').AsString := Self.F_telefon;
     Qry.ParamByName('Cemail').AsString := Self.F_email;
   //  -------------------------------------------------------------------------  //
-//    Qry.ParamByName('Cbirthdate').AsDate := DateOf(Self.F_birthdate);
-//    Qry.ParamByName('Cinsertts').AsDate := DateOf(Self.F_insertts);
+    Qry.ParamByName('Cbirthdate').AsDate := DateOf(Self.F_birthdate);
+    Qry.ParamByName('Cinsertts').AsDate := DateOf(Self.F_insertts);
 
     Try
       ConecMain.StartTransaction;
@@ -207,8 +205,10 @@ begin
       Self.F_sex := Qry.FieldByName('Csex').AsString;
       Self.F_telefon := Qry.FieldByName('Ctelefon').AsString;
       Self.F_email := Qry.FieldByName('Cemail').AsString;
-      Self.F_birthdate := Qry.FieldByName('Cbirthdate').AsDateTime;
-      Self.F_insertts := Qry.ParamByName('Cinsertts').AsDateTime;
+//     -----------------------------------------------------    //
+
+      Self.F_birthdate := DateOf(Qry.FieldByName('Cbirthdate').AsDateTime);
+      Self.F_insertts := DateOf(Qry.FieldByName('Cinsertts').AsDateTime);
 
     Except
       Result := false;
