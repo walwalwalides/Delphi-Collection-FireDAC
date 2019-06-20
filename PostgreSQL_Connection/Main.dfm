@@ -16,7 +16,7 @@ object frmMain: TfrmMain
   PixelsPerInch = 96
   TextHeight = 13
   object MMMain: TMainMenu
-    Left = 136
+    Left = 48
     Top = 56
     object File1: TMenuItem
       Caption = '&File'

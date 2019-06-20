@@ -117,7 +117,7 @@ end;
 // CEmail Character(60),
 // CSex Character(1) Not Null,
 // CBirthdate Date,
-// CInsertts timestamp without time zone ,
+// CInsertts Date,
 // constraint Client_pkey Primary Key (ClientID)
 // )
 
@@ -128,9 +128,10 @@ begin
     ExecuteMSSQLDataBase('CREATE TABLE clients (' + 'ClientID SERIAL,' + 'CName character(45) Not Null,' +
       'CAdress Character(100), ' + 'CCity varchar(50) null,' + 'CTelefon character(14), ' +
       'CEmail Character(60),' + 'CSex Character(1) Not Null,' + 'CBirthdate Date,' + 'CInsertts Date,'+
-
       'Constraint Clients_pkey Primary Key (ClientID) ' + ') ');
   end;
+
+
 end;
 
 end.
