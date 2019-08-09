@@ -1,5 +1,5 @@
 # SQLite_University
-- Build a Relationship Between Multiple Sub-Entities using FireDAC .
+- Build a Relationship Between Multiple Sub-Entities Using FireDAC .
                    
 ![](SQLite_University.png) 
 
@@ -7,9 +7,9 @@
 
 
 # Features  
-- Define Connection Accessibility With MSSQL Server .
-- Test Connection Parameters of the Connection .
-- Execute Different Sql Task and CRUD-Operationen .
+- Update Tables Using Triggers .
+- Set Relation Between Tables .
+- Execute Different SQL Task and CRUD-Operationen .
 
 
 ## Files
