@@ -26,6 +26,6 @@
 | SelectFolderData.pas| SelectFolderData Unit of the programme  | 
 | Main.pas | Main view of the programme |
 | DM_University.png | Data Model of DataBase  |
-| University.dpk | The compiler project file |
-| University.dproj | The MSBUILD project file |
+| SQLite_University.dpk | The compiler project file |
+| SQLite_University.dproj | The MSBUILD project file |
 | README.md | The readme for this project |
