@@ -158,7 +158,12 @@ begin
     begin
       lblCLassNr.caption := 'Nr : ' + RecClass.iClassNumber.ToString;
       if (RecClass.iClassNumber > 0) then
-        SpeedButtonUpd.Enabled := FALSE; // cause of relation between entity
+        SpeedButtonUpd.Enabled := FALSE // cause of relation between entity
+        else
+        begin
+          SpeedButtonUpd.Enabled := True;
+        end;
+
     end
     else
     begin

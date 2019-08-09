@@ -30,7 +30,6 @@ type
     // ---------------------Main Tables ---------------------    //
 
     procedure SetTableStudent(AConecSQlite: TFDConnection);
-    procedure SetTableTasks(AConecSQlite: TFDConnection);
     procedure SetTableOptions(AConecSQlite: TFDConnection);
     procedure SetTriggerStudentIns(AConecSQlite: TFDConnection);
     procedure SetTriggerStudentDel(AConecSQlite: TFDConnection);
@@ -66,23 +65,7 @@ begin
 
 end;
 
-procedure TCreateTable.SetTableTasks(AConecSQlite: TFDConnection);
-var
-  tmpQuery: TFDQuery;
-begin
-  tmpQuery := TFDQuery.Create(nil);
-  tmpQuery.Connection := AConecSQlite;
-  tmpQuery.close;
-  tmpQuery.SQL.Clear;
-  tmpQuery.SQL.Add('Create Table Tasks(');
-  tmpQuery.SQL.Add('ID integer NOT NULL PRIMARY KEY AUTOINCREMENT,');
-  tmpQuery.SQL.Add('User_ID integer,');
-  tmpQuery.SQL.Add('TaskName varchar(32))');
-  tmpQuery.Execute;
-  tmpQuery.close;
-  tmpQuery.Free;
 
-end;
 
 procedure TCreateTable.SetTableOptions(AConecSQlite: TFDConnection);
 var
