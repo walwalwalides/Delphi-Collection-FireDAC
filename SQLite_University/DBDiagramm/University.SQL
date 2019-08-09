@@ -10,7 +10,19 @@
 
 -- Create tables section -------------------------------------------------
 
+
+-- Table Class
+
+CREATE TABLE IF NOT EXISTS Class
+(
+  ID INTEGER NOT NULL,
+  ClassNumber INTEGER NOT NULL DEFAULT 0,
+  ClassName varchar(50) NOT NULL,
+  CONSTRAINT PK_Class PRIMARY KEY (ClassName)
+);
+
 -- Table Student
+
 
 CREATE TABLE IF NOT EXISTS Student
 (
@@ -61,13 +73,6 @@ BEGIN
      UPDATE class SET ClassNumber = ClassNumber -1 WHERE ClassName = old.ClassName; 
 END;
 
--- Table Class
 
-CREATE TABLE IF NOT EXISTS Class
-(
-  ID INTEGER NOT NULL,
-  ClassNumber INTEGER NOT NULL DEFAULT 0,
-  ClassName varchar(50) NOT NULL,
-  CONSTRAINT PK_Class PRIMARY KEY (ClassName)
-);
+
 
