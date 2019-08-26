@@ -9,7 +9,7 @@ My Own Delphi-Collection ( FireDAC )
 
 | File | Contents | 
 | --- | --- |
-| .gitignore | Git ignores the files in this file |
+| .gitignore | Git ignores the Files in this File |
 |[MySQL_StoreProc](https://github.com/walwalwalides/Delphi-Collection-FireDAC/tree/master/MySQL_StoreProc)|How create stored procedure in MySQL|
 |[MMSQL_DefineAccess](https://github.com/walwalwalides/Delphi-Collection-FireDAC/tree/master/MMSQL_DefineAccess)|Define Connection Accessibility to Connect with Microsoft SQL Server (DBMS) using FireDAC |
 |[MSSQL_MyProduct](https://github.com/walwalwalides/Delphi-Collection-FireDAC/tree/master/MSSQL_MyProduct)|Connect Application to the Microsoft SQL Server (DBMS) using FireDAC |
@@ -17,7 +17,7 @@ My Own Delphi-Collection ( FireDAC )
 |[SQLite_SaveMyLogIn](https://github.com/walwalwalides/Delphi-Collection-FireDAC/tree/master/SQLite_LogIn)|Create and Save Different Parameters in Database Using SQLite (Management and Planning Tools) |
 |[MongoDB_Connection](https://github.com/walwalwalides/Delphi-Collection-FireDAC/tree/master/MongoDB_Connection)|Connect Application with MongoDB server Using FireDAC |
 |[SQLite_University](https://github.com/walwalwalides/Delphi-Collection-FireDAC/tree/master/SQLite_University)|Build a Relationship Between Multiple Sub-Entities Using FireDAC .|
-| README.md | The readme for this project|
+| README.md | The Readme for this Project|
 
 ------
 
