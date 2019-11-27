@@ -43,8 +43,8 @@ procedure TDMMain.DataModuleCreate(Sender: TObject);
 begin
   ConnectionMain.Connected := False;
   ConnectionMain.LoginPrompt := False;
-  FDPhysPgDriverLink1.VendorHome := 'C:\Program Files (x86)\PostgreSQL\10\';
-  FDPhysPgDriverLink1.VendorLib := 'libpq.dll';
+//  FDPhysPgDriverLink1.VendorHome := 'C:\Program Files (x86)\PostgreSQL\10\';
+//  FDPhysPgDriverLink1.VendorLib := 'libpq.dll';
   ConnectionMain.ConnectionString := 'Name=PostgreSQL_Connection;' + 'DriverID=PG;' + 'Database=MyTest;' + 'MetaDefSchema=public;' + 'ExtendedMetadata=False;' +
     'User_Name=postgres;' + 'Password=123456;' + 'Server=Localhost';
 

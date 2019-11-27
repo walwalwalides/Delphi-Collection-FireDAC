@@ -14,7 +14,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
-  Vcl.ExtCtrls, ShellApi, acPNG;
+  Vcl.ExtCtrls, ShellApi;
 
 type
   TfrmAbout = class(TForm)

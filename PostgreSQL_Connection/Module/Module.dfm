@@ -16,8 +16,6 @@ object DMMain: TDMMain
     Top = 48
   end
   object FDPhysPgDriverLink1: TFDPhysPgDriverLink
-    VendorHome = 'C:\Program Files (x86)\PostgreSQL\10\'
-    VendorLib = 'libpq.dll'
     Left = 48
     Top = 32
   end
