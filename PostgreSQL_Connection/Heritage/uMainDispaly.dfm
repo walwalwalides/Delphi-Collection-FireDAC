@@ -26,6 +26,7 @@ object frmMainDisplay: TfrmMainDisplay
     Color = clWhite
     ParentBackground = False
     TabOrder = 0
+    ExplicitLeft = -1
     DesignSize = (
       864
       52)
@@ -178,7 +179,7 @@ object frmMainDisplay: TfrmMainDisplay
       OnClick = btnDeleteClick
     end
     object btnExit: TBitBtn
-      Left = 783
+      Left = 743
       Top = 14
       Width = 75
       Height = 25
