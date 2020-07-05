@@ -10,7 +10,7 @@
 - Building a Custom User Interface for your Database .
 - Test Connection Parameters of the Main Connection .
 - Execute Different SQL Tasks and CRUD-Operationen .
-- Play wav sound as internal resource
+- Play (.wav) Sound as internal resource .
 - Save all menu configuration parametres using indy components. 
 
 
