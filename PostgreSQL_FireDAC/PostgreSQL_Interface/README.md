@@ -1,5 +1,5 @@
 # PostgreSQL_Interface
-- Connect Application and Set Returning Functions with Postgresql Server Using FireDAC .
+- Implement a interface to set connection with PostgreSQL Database using FireDAC.
                    
 ![](PostgreSQL_Interface.png) 
 
@@ -7,12 +7,11 @@
 
 
 # Features  
-- Connect Application With PostgreSQL Server .
+- Building a Custom User Interface for your Database .
 - Test Connection Parameters of the Main Connection .
-- Check Table Exists With PostgreSQL Server .
-- Set Trigger that are run automatically when a specified change operation .
-- Set Returning Functions .
 - Execute Different SQL Tasks and CRUD-Operationen .
+- Play wav sound as internal resource
+- Save all menu configuration parametres using indy components. 
 
 
 
@@ -24,16 +23,16 @@
 | --- | --- |
 | .gitignore | Git ignores the files in this file |
 | uAbout.pas | About view of the programme |
-| Main.pas | Main view of the programme |
-| Module.pas | Main Module of the programme |
-| uViewClients.pas | Clients View |
-| uMainDispaly.pas | Main view of the programme |
-| uEnum.pas | uEnum Unit |
-| cMyClients.pas | Clients Class Unit |
-| uRelMyClients.pas | Clients Report  |
-| cActualConecPostgreSQL.pas | cActualConecPostgreSQL  Unit |
-| cActualDatenPostgreSQL.pas | cActualDatenPostgreSQL Unit |
-| cActualTablePostgreSQL.pas | cActualTablePostgreSQL Unit |
-| PostgreSQL_Connection.dpk | The compiler project file |
-| PostgreSQL_Connection.dproj | The MSBUILD project file |
+| uDM_RepositoryPostgreSQL.pas | Repository Module of the programme |
+| uDM_RepositorySysPostgreSQL.pas | Repository System Module of the programme |
+| uMain.pas | Main view of the programme |
+| uConfiguration.pas | Configuration Class Unit |
+| uUserinfo.pas | Userinfo Class Unit |
+| ulevelClr.pas | levelClr Class Unit |
+| uiConfig.pas | uiConfig Interface Unit |
+| uiRepoSystem.pas | uiRepoSystem Interface Unit |
+| uiRepositories.pas | uiRepositories Interface Unit |
+| PostgreSQL_Interface.dpk | The compiler project file |
+| PostgreSQL_Interface.dproj | The MSBUILD project file |
 | README.md | The readme for this project |
+
