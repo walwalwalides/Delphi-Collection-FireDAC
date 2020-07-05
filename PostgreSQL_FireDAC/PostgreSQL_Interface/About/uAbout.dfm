@@ -670,11 +670,11 @@ object frmAbout: TfrmAbout
     Proportional = True
   end
   object Titre: TLabel
-    Left = 69
+    Left = 78
     Top = 44
-    Width = 132
+    Width = 120
     Height = 17
-    Caption = 'PostgreSQL_Connection'
+    Caption = 'PostgreSQL_Interface'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -689,7 +689,7 @@ object frmAbout: TfrmAbout
     Height = 180
     Lines.Strings = (
       '      Software name'
-      '      PostgreSQL_Connection'
+      '      PostgreSQL_Interface'
       ''
       '      Software version'
       '       V1.0.0'
@@ -698,7 +698,7 @@ object frmAbout: TfrmAbout
       ''
       ''
       ''
-      'Copyright '#169' 2019 By '
+      'Copyright '#169' 2020 By '
       'Walwalwalides'
       '                             ')
     ReadOnly = True

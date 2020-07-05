@@ -1,13 +1,13 @@
 { ============================================
-  Software Name : 	PostgreSQL_Connection
+  Software Name : 	PostgreSQL_Interface
   ============================================ }
 { ******************************************** }
 { Written By WalWalWalides                     }
-{ CopyRight © 2019                             }
+{ CopyRight © 2020                            }
 { Email : WalWalWalides@gmail.com              }
 { GitHub :https://github.com/walwalwalides     }
 { ******************************************** }
-unit About;
+unit uAbout;
 
 interface
 

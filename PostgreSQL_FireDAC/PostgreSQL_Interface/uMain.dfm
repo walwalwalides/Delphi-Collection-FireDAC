@@ -2,9 +2,9 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'frmMain'
-  ClientHeight = 279
-  ClientWidth = 635
-  Color = clWhite
+  ClientHeight = 449
+  ClientWidth = 643
+  Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -16,8 +16,8 @@ object frmMain: TfrmMain
   PixelsPerInch = 96
   TextHeight = 13
   object MMMain: TMainMenu
-    Left = 128
-    Top = 96
+    Left = 32
+    Top = 344
     object File1: TMenuItem
       Caption = '&File'
       object Exit1: TMenuItem
@@ -28,14 +28,11 @@ object frmMain: TfrmMain
         Caption = '-'
       end
     end
-    object N4: TMenuItem
-      Caption = '&Display'
-      object N5: TMenuItem
-        Action = acDisClients
-      end
-    end
     object N3: TMenuItem
       Caption = '&Option'
+      object Configuration: TMenuItem
+        Action = actConfig
+      end
     end
     object A2: TMenuItem
       Caption = '&About'
@@ -48,8 +45,8 @@ object frmMain: TfrmMain
     end
   end
   object ActionList1: TActionList
-    Left = 361
-    Top = 64
+    Left = 33
+    Top = 400
     object actOpenFile: TAction
       Category = 'File'
       Caption = 'Open File(s)...'
@@ -66,22 +63,17 @@ object frmMain: TfrmMain
       Caption = 'Exit'
       OnExecute = actExitExecute
     end
-    object actOption: TAction
+    object actConfig: TAction
       Category = 'Option'
-      Caption = 'Option'
-      ShortCut = 16463
+      Caption = '&Configuration'
+      ShortCut = 16451
+      OnExecute = actConfigExecute
     end
     object actAbout: TAction
       Category = 'About'
       Caption = 'Info'
       ShortCut = 16457
       OnExecute = actAboutExecute
-    end
-    object acDisClients: TAction
-      Category = 'Display'
-      Caption = '&Clients'
-      ShortCut = 16451
-      OnExecute = acDisClientsExecute
     end
   end
 end

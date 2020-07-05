@@ -1,0 +1,8 @@
+#define WAVE        WAVES
+
+SOUND1 WAVE "1.wav"
+SOUND2 WAVE "2.wav"
+SOUND3 WAVE "3.wav"
+
+
+

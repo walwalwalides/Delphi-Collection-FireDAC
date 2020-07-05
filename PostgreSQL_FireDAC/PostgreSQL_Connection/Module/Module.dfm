@@ -5,15 +5,16 @@ object DMMain: TDMMain
   Width = 329
   object ConnectionMain: TFDConnection
     Params.Strings = (
+      'User_Name=walwalwalides'
       'ConnectionDef=Postgres_MyTest')
     LoginPrompt = False
-    Left = 48
-    Top = 104
+    Left = 40
+    Top = 88
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'Forms'
-    Left = 136
-    Top = 48
+    Left = 144
+    Top = 32
   end
   object FDPhysPgDriverLink1: TFDPhysPgDriverLink
     Left = 48
